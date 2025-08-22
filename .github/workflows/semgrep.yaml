@@ -94,7 +94,7 @@ jobs:
       run: cat .semgrepconfig.yml
     - name: Semgrep CI for pull request
       run: |
-        semgrep ci ${{inputs.semgrep-flags }} --json > semgrep-results.json
+        semgrep ci ${{inputs.semgrep-flags }}
         # echo "max-high-severity: ${{ inputs.max-high-severity }}"
         # echo "max-medium-severity: ${{ inputs.max-medium-severity }}"
         # cat semgrep-results.json
